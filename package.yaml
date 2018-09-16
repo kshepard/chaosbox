@@ -21,6 +21,7 @@ dependencies:
   - directory
   - cairo
   - colour
+  - hsnoise
   - linear
   - MonadRandom
   - mtl
@@ -39,6 +40,12 @@ library:
 executables:
   chaosbox-example:
     source-dirs: example
+    main: Main.hs
+    dependencies:
+      - chaosbox
+
+  001:
+    source-dirs: sandbox/001
     main: Main.hs
     dependencies:
       - chaosbox
